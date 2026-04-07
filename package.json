@@ -1,0 +1,1 @@
+{\n  "name": "temp-mail-vanz",\n  "version": "1.0.0",\n  "description": "A Cloudflare Worker for temporary email service",\n  "main": "index.js",\n  "scripts": {\n    "dev": "wrangler dev",\n    "deploy": "wrangler publish"\n  },\n  "devDependencies": {\n    "@cloudflare/wrangler": "^2.0.0"\n  }\n}
