@@ -1,0 +1,7 @@
+# Example wrangler.toml
+
+name = "my-worker"
+type = "javascript"
+
+[env.production]
+database = { name = "my-database", binding = "DB" }
