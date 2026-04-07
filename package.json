@@ -1,1 +1,15 @@
-{\n  "name": "temp-mail-vanz",\n  "version": "1.0.0",\n  "description": "A Cloudflare Worker for temporary email service",\n  "main": "index.js",\n  "scripts": {\n    "dev": "wrangler dev",\n    "deploy": "wrangler publish"\n  },\n  "devDependencies": {\n    "@cloudflare/wrangler": "^2.0.0"\n  }\n}
+{
+  "name": "tempmail-vanz",
+  "version": "1.0.0",
+  "description": "Temporary email service running on Cloudflare Workers with D1 database",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute tempmail-db --file src/db/schema.sql",
+    "db:init:remote": "wrangler d1 execute tempmail-db --remote --file src/db/schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

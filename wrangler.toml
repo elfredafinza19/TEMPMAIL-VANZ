@@ -1,7 +1,12 @@
-# Example wrangler.toml
+name = "tempmail-vanz"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
 
-name = "my-worker"
-type = "javascript"
+[assets]
+directory = "./public"
+binding = "ASSETS"
 
-[env.production]
-database = { name = "my-database", binding = "DB" }
+[[d1_databases]]
+binding = "DB"
+database_name = "tempmail-db"
+database_id = "replace-with-your-database-id"
