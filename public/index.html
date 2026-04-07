@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Mail</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-blue-600 p-5">
+        <div class="container mx-auto">
+            <h1 class="text-white text-xl font-bold">Temp Mail</h1>
+            <div class="flex space-x-4">
+                <a href="#email-gen" class="text-white hover:text-blue-300">Email Generation</a>
+                <a href="#inbox" class="text-white hover:text-blue-300">Inbox Management</a>
+                <a href="#domain" class="text-white hover:text-blue-300">Domain Management</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-5">
+        <section id="email-gen" class="mb-10">
+            <h2 class="text-2xl font-semibold mb-4">Generate a Temporary Email</h2>
+            <div class="bg-white p-6 rounded shadow">
+                <input type="text" placeholder="Your temporary email" class="border rounded p-2 w-full mb-4">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded">Generate</button>
+            </div>
+        </section>
+
+        <section id="inbox" class="mb-10">
+            <h2 class="text-2xl font-semibold mb-4">Inbox Management</h2>
+            <div class="bg-white p-6 rounded shadow">
+                <p>No emails found. Generate your email to start managing your inbox!</p>
+            </div>
+        </section>
+
+        <section id="domain">
+            <h2 class="text-2xl font-semibold mb-4">Domain Management</h2>
+            <div class="bg-white p-6 rounded shadow">
+                <p>Manage your email domains here.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
